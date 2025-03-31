@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скриншот в буфер</title>
+    <link rel="stylesheet" href="./base/assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="copy"  onclick="captureAndCopyToClipboard()">Скриншот в буфер</div>
+
+        <div class="inputs">
+            <input class="colorInput" type="text">
+            <input class="b_wInput" type="text">
+        </div>
+    </header>
+
+    <main>
+        <div class="main-frame" id="targetElement">
+            <div class="up-side">
+                <div class="total">
+                    <div class="prices">
+                        <div class="color">
+                            <div class="title">◆ КОЛІР:</div>
+                            <div class="data">6 грн</div>
+                        </div>
+                        <div class="b_w">
+                            <div class="title">◈ Ч/Б:</div>
+                            <div class="data">6 грн</div>
+                        </div>
+
+                        <div class="total-price">
+                            <div class="title">Всього:</div>
+                            <div class="data">12 грн</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./base/source/printer.png" alt="" class="printer">
+            </div>
+            
+            <div class="down-side">
+                <div class="card-number">💳 4441111130532686</div>
+                <div class="description">Якщо можна, будь ласочка на карту, мені так зручніше 🫶 Якщо ні 🙁 то готівкою теж приймаю🙃</div>
+                <div class="location">9-й поверх, ліве, 145 ✅</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="./base/assets/clipboards.js"></script>
+    <script src="./base/assets/calc.js"></script>
+</body>
+</html>
