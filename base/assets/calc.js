@@ -13,6 +13,7 @@ colorInput.addEventListener("input", () => {
     const out = color * multipliers.color,
         total = (color * multipliers.color) + (black * multipliers.b_w);
     document.querySelector(".color > .data").textContent = `${out} грн`;
+    document.querySelector('.color > .title').textContent = `◆ (${color})КОЛІР:`;  
     document.querySelector(".total-price > .data").textContent = `${total} грн`;
 })
 
@@ -23,5 +24,6 @@ b_wInput.addEventListener("input", () => {
     const out = black * multipliers.b_w,
         total = (color * multipliers.color) + (black * multipliers.b_w);
     document.querySelector(".b_w > .data").textContent = `${out} грн`;
+    document.querySelector('.b_w > .title').textContent = `◈ (${black})Ч/Б:`;
     document.querySelector(".total-price > .data").textContent = `${total} грн`;
 })
