@@ -30,7 +30,7 @@ main{
 .main-frame{
     padding-top: 20px;
     padding-left: 80px;
-    width: 1600px;
+    width: 2000px;
     height: 900px;
     display: flex;
     flex-direction: column;
