@@ -28,9 +28,10 @@ main{
 }
 
 .main-frame{
-    padding-top: 20px;
+    padding-top: 50px;
     padding-left: 80px;
-    width: 2000px;
+    transform: scale(0.7);
+    width: 1700px;
     height: 900px;
     display: flex;
     flex-direction: column;
@@ -59,21 +60,22 @@ main{
     width: 750px;
 }
 
-.prices{
-    display: flex;
-    flex-direction: column;
-    /* gap: 20px; */
-    font-size: 100px;
-}
-
-.color, .b_w{
+.total{
     display: flex;
     flex-direction: row;
-    font-weight: 400;
-    gap: 20px;
+    gap: 84px;
+    font-size: 48px;
 }
 
-.color > .data, .b_w > .data{
+.column > .title{
+    font-size: 36px;
+    font-weight: 200;
+    margin-bottom: 62px;
+}
+
+.column > .item{
+    font-size: 48px;
+    margin-bottom: 81px;
     font-weight: 700;
 }
 
@@ -85,35 +87,21 @@ main{
 .down-side{
     display: flex;
     flex-direction: column;
-    margin-top: -100px;
+    margin-top: -130px;
     gap: 50px;
     font-size: 40px;
     font-weight: 400;
 }
 
 .description{
-    width: 80%;
-    font-weight: 400;
+    width: 60%;
+    font-weight: 200;
 }
 
 .location{
+    font-size: 48px;
     font-weight: 700;
-}
-
-.total-price{
-    margin-top: 20px;
-    /* font-weight: 700; */
-    /* font-size: 120px; */
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.total-price > .data{
-    font-weight: 700;
-    font-size: 120px;
-}
+} 
 
 .copy{
     background: black;
