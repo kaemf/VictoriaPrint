@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Скриншот в буфер</title>
+    <title>Victoria`s Print Layout</title>
     <link rel="stylesheet" href="./base/assets/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
     <header>
-        <div class="copy"  onclick="captureAndCopyToClipboard()">Скриншот в буфер</div>
+        <div class="copy" onclick="captureAndCopyToClipboard()">Отримати</div>
 
         <div class="inputs">
-            <input class="colorInput" type="text">
-            <input class="b_wInput" type="text">
+            <input class="colorInput" type="number" placeholder="0">
+            <input class="b_wInput" type="number" placeholder="0">
         </div>
     </header>
 
@@ -59,9 +59,27 @@
     </main>
 
     <footer>
+        <div class="developer"></div>
+        <div class="customer">Victoria Melnychenko</div>
     </footer>
 
+    <div class="popup">
+        <div class="popup-content">
+            <div class="success-checkmark">
+                <div class="check-icon">
+                  <span class="icon-line line-tip"></span>
+                  <span class="icon-line line-long"></span>
+                  <div class="icon-circle"></div>
+                  <div class="icon-fix"></div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <script src="./base/assets/init.js"></script>
     <script src="./base/assets/clipboards.js"></script>
     <script src="./base/assets/calc.js"></script>
+    <script src="./base/assets/setdev.js"></script>
+    <script src="./base/assets/reactive.js"></script>
 </body>
 </html>

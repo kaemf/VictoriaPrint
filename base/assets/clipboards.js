@@ -8,7 +8,24 @@ async function captureAndCopyToClipboard() {
             await navigator.clipboard.write([
                 new ClipboardItem({ "image/png": blob })
             ]);
-            alert("Скриншот скопирован в буфер обмена!");
+            
+            popup.style.opacity = 1;
+            popup.style.visibility = "visible";
+            popupContent.style.transform = 'scale(1)';
+            popupContent.style.opacity = 1;
+
+            success.style.display = 'block';
+
+            setTimeout(() => {
+                popupContent.style.transform = 'scale(0)';
+                popupContent.style.opacity = 0;
+                success.style.display = 'none';
+            }, 1100);
+
+            setTimeout(() => {
+                popup.style.opacity = 0;
+                popup.style.visibility = "hidden";
+            }, 1200);
         } catch (err) {
             console.error("Ошибка копирования:", err);
         }

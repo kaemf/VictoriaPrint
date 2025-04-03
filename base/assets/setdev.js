@@ -1,0 +1,1 @@
+document.querySelector(".developer").textContent = `Yaroslav Volkivskyi | ${date.getFullYear()}`;

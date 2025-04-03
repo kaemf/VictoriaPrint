@@ -1,11 +1,3 @@
-const colorInput = document.querySelector(".colorInput"),
-    b_wInput = document.querySelector(".b_wInput");
-
-const multipliers = {
-    color: 6,
-    b_w: 3
-}
-
 colorInput.addEventListener("input", () => {
     const color = parseInt(colorInput.value) || 0,
         black = parseInt(b_wInput.value) || 0;
